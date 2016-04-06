@@ -1,0 +1,44 @@
+
+// Footer SCSS
+
+.footer {
+
+	@include clearfix;
+
+	font-family: $font-style-headings;
+
+	div.nav-footer { 	
+		
+		nav {
+			margin-top: 20px;
+			text-align: center;
+
+			ul {
+				
+				li {
+					list-style-type: none;	
+					@include border-style-orange;
+					line-height: 1.5;
+					padding: 0 20px;
+					display: inline-block;
+					text-align: center;
+
+					a {
+						font-size: 14px;
+						color: $charcoal;
+						text-decoration: none;
+					} // End footer a css
+
+					a:hover {
+						@extend a;
+						color: $orange;
+						transition: .3s;
+
+					} // End a:hover css
+
+				} // End footer li css
+			}// End footer ul css
+		} // End footer nav css
+	} // End nav-footer div
+
+}// End #footer" 

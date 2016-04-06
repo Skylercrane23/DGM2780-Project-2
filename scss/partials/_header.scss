@@ -1,0 +1,61 @@
+
+// Header SCSS
+
+.header {
+
+	@include clearfix;
+
+	font-family: $font-style-headings;
+	font-weight: $Font-Light;
+	margin-bottom: 10px;
+	@extend .header;
+    
+	div.nav-container {
+
+		h1 {
+			font-size: 40px;
+			font-weight: $Font-Bold;
+			float: left;
+			@extend .header;
+
+			a {
+				text-decoration: none;
+				color: $charcoal;
+			} // end h1 a css
+
+			a:hover {
+				color: $orange;
+				transition: .4s;
+			} // end h1 a:hover css
+		} // end h1 
+
+		nav {
+			float: right;
+
+			ul {
+				list-style-type: none;
+
+				li {
+					float: left;	
+
+					a {
+						display: block;
+						color: $charcoal;
+						text-decoration: none;
+						margin: 20px 0;
+						padding: 0 20px;
+						@include border-style-orange;
+
+						&:hover {
+							color: $orange;
+							transition: .4s;
+						} // End a:hover css
+					} // End a css
+				} // End li css
+			}// End ul css
+		} // End nav css
+	} // End 'nav-container div'
+} // #header
+
+
+

@@ -1,0 +1,175 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a,
+.footer div.nav-footer nav ul li a:hover, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, #home-page div.main-content div.container div.image-container div.image-gallery a:hover, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/*
+@mixin breakpoint ($point) {
+	@if $point == laptop {
+			@media (max-width: 1100px) { @content ; }
+		} 
+	@else if $point == tablet {
+			@media (max-width: 768px) {@content ; }
+		} 
+	@else if $point == mobile {
+			@media (max-width: 680px) {@content ; }
+		}
+	}
+*/
+html, body, * {
+  box-sizing: border-box;
+  /*
+  	@include breakpoint(laptop) {
+  		background: $orange;
+  	}
+  	@include breakpoint(tablet) {
+  		background: $charcoal;
+  	}
+  	@include breakpoint(mobile) {
+  		background: $sand;
+  	}
+  */ }
+  html:after, body:after, *:after {
+    content: '';
+    clear: both;
+    display: table; }
+  html div.wrapper, body div.wrapper, * div.wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 15px 30px;
+    background-color: #DCD8CF;
+    font-family: Open Sans, Helvetica, Arial, sans-serif; }
+
+.header, .header div.nav-container h1 {
+  font-family: Open Sans, Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  margin-bottom: 10px; }
+  .header:after, .header div.nav-container h1:after {
+    content: '';
+    clear: both;
+    display: table; }
+  .header div.nav-container h1 {
+    font-size: 40px;
+    font-weight: 700;
+    float: left; }
+    .header div.nav-container h1 a, .header div.nav-container h1 .footer div.nav-footer nav ul li a:hover, .footer div.nav-footer nav ul li .header div.nav-container h1 a:hover {
+      text-decoration: none;
+      color: #282827; }
+    .header div.nav-container h1 a:hover, .header div.nav-container h1 .footer div.nav-footer nav ul li a:hover, .footer div.nav-footer nav ul li .header div.nav-container h1 a:hover {
+      color: #E25D33;
+      transition: .4s; }
+  .header div.nav-container nav {
+    float: right; }
+    .header div.nav-container nav ul {
+      list-style-type: none; }
+      .header div.nav-container nav ul li {
+        float: left; }
+        .header div.nav-container nav ul li a, .header div.nav-container .footer div.nav-footer nav ul li a:hover, .footer div.nav-footer .header div.nav-container nav ul li a:hover {
+          display: block;
+          color: #282827;
+          text-decoration: none;
+          margin: 20px 0;
+          padding: 0 20px;
+          border-right: 1px #E25D33 solid; }
+          .header div.nav-container nav ul li a:hover {
+            color: #E25D33;
+            transition: .4s; }
+
+.footer {
+  font-family: Open Sans, Helvetica, Arial, sans-serif; }
+  .footer:after {
+    content: '';
+    clear: both;
+    display: table; }
+  .footer div.nav-footer nav {
+    margin-top: 20px;
+    text-align: center; }
+    .footer div.nav-footer nav ul li {
+      list-style-type: none;
+      border-right: 1px #E25D33 solid;
+      line-height: 1.5;
+      padding: 0 20px;
+      display: inline-block;
+      text-align: center; }
+      .footer div.nav-footer nav ul li a, .footer div.nav-footer nav ul li a:hover {
+        font-size: 14px;
+        color: #282827;
+        text-decoration: none; }
+      .footer div.nav-footer nav ul li a:hover {
+        color: #E25D33;
+        transition: .3s; }
+
+#home-page {
+  font-family: Open Sans, Helvetica, Arial, sans-serif;
+  font-weight: 300; }
+  #home-page:after {
+    content: '';
+    clear: both;
+    display: table; }
+  #home-page .hero-banner {
+    width: 940px;
+    height: 240px;
+    background: transparent url(../img/CozyCornerBanner.jpg);
+    background-repeat: no-repeat;
+    margin-bottom: 25px; }
+  #home-page div.main-content {
+    line-height: 1.5; }
+    #home-page div.main-content div.container h1 {
+      font-weight: 700;
+      font-size: 20px;
+      margin: 20px 0; }
+    #home-page div.main-content div.container p {
+      font-size: 14px;
+      margin: 10px 0; }
+    #home-page div.main-content div.container div.image-container {
+      width: 100%;
+      margin-bottom: 20px; }
+      #home-page div.main-content div.container div.image-container div.image-gallery {
+        float: left;
+        width: 200px;
+        height: 200px;
+        margin-right: 3.70%; }
+        #home-page div.main-content div.container div.image-container div.image-gallery:after {
+          content: '';
+          clear: both;
+          display: table; }
+        #home-page div.main-content div.container div.image-container div.image-gallery a {
+          opacity: .4; }
+          #home-page div.main-content div.container div.image-container div.image-gallery a img, #home-page div.main-content div.container div.image-container div.image-gallery a a:hover {
+            border-radius: 20px; }
+          #home-page div.main-content div.container div.image-container div.image-gallery a:hover {
+            opacity: 1.0;
+            transition: .5s; }
+    #home-page div.main-content div.container .box2 {
+      width: 50%;
+      float: left;
+      margin: 0 auto;
+      margin-bottom: 20px;
+      padding-right: 20px; }
+      #home-page div.main-content div.container .box2:after {
+        content: '';
+        clear: both;
+        display: table; }
+
+/*# sourceMappingURL=main.css.map */

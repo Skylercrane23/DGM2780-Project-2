@@ -1,0 +1,27 @@
+// General Styles
+
+html, body, * {
+
+	box-sizing: border-box;
+	@include clearfix;
+
+	div.wrapper {
+		width: 1000px;
+		margin: 0 auto;
+		padding: 15px 30px;
+		background-color: $sand;
+		font-family: $font-style-headings;
+	}
+/*
+	@include breakpoint(laptop) {
+		background: $orange;
+	}
+	@include breakpoint(tablet) {
+		background: $charcoal;
+	}
+	@include breakpoint(mobile) {
+		background: $sand;
+	}
+*/
+}
+

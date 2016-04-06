@@ -1,0 +1,74 @@
+
+// Home Page SCSS
+
+#home-page {
+
+	font-family: $font-style-headings;
+	font-weight: $Font-Light;
+	@include clearfix;
+	
+	.hero-banner {
+		width: 940px;
+		height: 240px;
+		background: transparent url(../img/CozyCornerBanner.jpg);
+		background-repeat: no-repeat;
+		margin-bottom: 25px;
+	}
+
+	div.main-content {
+		line-height: 1.5;
+
+		div.container {
+
+			h1 {
+				@include text-style-h1;
+			} // End 'h1' css
+
+			p {
+				font-size: 14px;
+				margin: 10px 0;
+			} // End 'p' css
+			
+			div.image-container {
+				width: 940px / 940px * 100%;
+				margin-bottom: 20px;
+
+				
+
+				div.image-gallery {
+					float: left;
+					width: 200px;
+					height: 200px;
+					margin-right: 3.70%;
+					@include clearfix;
+
+					a {
+						opacity: .4;	
+
+						img {
+							@include border_radius;
+						}
+
+						&:hover {
+							opacity: 1.0;
+							transition: .5s;
+							@extend img;
+
+						} // end hover css
+					} // a css
+
+					} // End Image-gallery div
+			} // End image-container div	
+
+			.box2 {
+				width: 470px / 940px * 100%;
+				float: left;
+				margin: 0 auto;
+				margin-bottom: 20px;
+				padding-right: 20px;
+				@include clearfix;
+			} // End box2 css
+		} // end 'container' css
+	} // #main content
+}// #home-page
+
